@@ -3,7 +3,7 @@
 pipeline {
     agent {
         docker {
-            image 'azagramac/maven'
+            image 'maven'
             args '-v /root/.m2:/root/.m2'
         }
     }

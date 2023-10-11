@@ -1,0 +1,15 @@
+# required: repository to clone (can be anything `git clone` understands) even
+# a repository already on disk
+repo: git@github.com:rayudusubrahmanyam12/maven-jenkins-nexus-sonar
+
+# required: database generation path
+database: database.db
+
+# optional: default False
+skip_default_metrics: false
+
+# optional: default []
+metric_package_names: []
+
+# optional: default ^$ (python regex) to exclude paths such as '^vendor/'
+exclude: ^$

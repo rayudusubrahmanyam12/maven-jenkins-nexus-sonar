@@ -4,13 +4,13 @@ package com.javamaven.app;
  * Hello world!
  */
 
-public class App
+public class Main
 {
     private final String message = "Hello World!";
-    public App() {}
+    public Main() {}
 
     public static void main(String[] args) {
-        System.out.println(new App().getMessage());
+        System.out.println(new Main().getMessage());
     }
 
     private final String getMessage() {

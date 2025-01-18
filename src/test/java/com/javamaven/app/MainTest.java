@@ -8,9 +8,9 @@ import org.junit.After;
 import static org.junit.Assert.*;
 
 /**
- * Unit test for simple App.
+ * Unit test for simple Main.
  */
-public class AppTest
+public class MainTest
 {
 
     private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
@@ -21,18 +21,18 @@ public class AppTest
     }
 
     @Test
-    public void testAppConstructor() {
+    public void testMainConstructor() {
         try {
-            new App();
+            new Main();
         } catch (Exception e) {
             fail("Construction failed.");
         }
     }
 
     @Test
-    public void testAppMain()
+    public void testMain()
     {
-        App.main(null);
+        Main.main(null);
         try {
             assertEquals("Hello World!" + System.getProperty("line.separator"), outContent.toString());
         } catch (AssertionError e) {
